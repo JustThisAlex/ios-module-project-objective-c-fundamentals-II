@@ -13,6 +13,9 @@
 		467FC84723F3738C00C15592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84623F3738C00C15592 /* Assets.xcassets */; };
 		467FC84A23F3738C00C15592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84823F3738C00C15592 /* LaunchScreen.storyboard */; };
 		467FC84D23F3738C00C15592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC84C23F3738C00C15592 /* main.m */; };
+		FA880F9E2428ECE900DBC455 /* AMSTimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FA880F9D2428ECE900DBC455 /* AMSTimedTask.m */; };
+		FA880FA22428F24400DBC455 /* AMSTimedTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA880FA12428F24400DBC455 /* AMSTimedTaskController.m */; };
+		FA880FA62428F4B900DBC455 /* AMSTimeTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA880FA52428F4B900DBC455 /* AMSTimeTrackerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		467FC84923F3738C00C15592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467FC84B23F3738C00C15592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467FC84C23F3738C00C15592 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA880F9C2428ECE900DBC455 /* AMSTimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMSTimedTask.h; sourceTree = "<group>"; };
+		FA880F9D2428ECE900DBC455 /* AMSTimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSTimedTask.m; sourceTree = "<group>"; };
+		FA880FA02428F24400DBC455 /* AMSTimedTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMSTimedTaskController.h; sourceTree = "<group>"; };
+		FA880FA12428F24400DBC455 /* AMSTimedTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSTimedTaskController.m; sourceTree = "<group>"; };
+		FA880FA42428F4B900DBC455 /* AMSTimeTrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMSTimeTrackerViewController.h; path = TimeTracker/ModelController/AMSTimeTrackerViewController.h; sourceTree = SOURCE_ROOT; };
+		FA880FA52428F4B900DBC455 /* AMSTimeTrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMSTimeTrackerViewController.m; path = TimeTracker/ModelController/AMSTimeTrackerViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +67,9 @@
 		467FC83923F3738B00C15592 /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
-				467FC85D23F3784C00C15592 /* Model Controller */,
+				FA880FA32428F49200DBC455 /* View Controller */,
+				FA880F9F2428F22C00DBC455 /* ModelController */,
 				467FC85B23F3768C00C15592 /* Model */,
-				467FC85C23F376B400C15592 /* View Controller */,
 				467FC85423F373D300C15592 /* Storyboards */,
 				467FC85323F373C900C15592 /* Resources */,
 			);
@@ -93,22 +102,28 @@
 		467FC85B23F3768C00C15592 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA880F9C2428ECE900DBC455 /* AMSTimedTask.h */,
+				FA880F9D2428ECE900DBC455 /* AMSTimedTask.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		467FC85C23F376B400C15592 /* View Controller */ = {
+		FA880F9F2428F22C00DBC455 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				FA880FA02428F24400DBC455 /* AMSTimedTaskController.h */,
+				FA880FA12428F24400DBC455 /* AMSTimedTaskController.m */,
 			);
-			path = "View Controller";
+			path = ModelController;
 			sourceTree = "<group>";
 		};
-		467FC85D23F3784C00C15592 /* Model Controller */ = {
+		FA880FA32428F49200DBC455 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA880FA42428F4B900DBC455 /* AMSTimeTrackerViewController.h */,
+				FA880FA52428F4B900DBC455 /* AMSTimeTrackerViewController.m */,
 			);
-			path = "Model Controller";
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA880F9E2428ECE900DBC455 /* AMSTimedTask.m in Sources */,
 				467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */,
+				FA880FA62428F4B900DBC455 /* AMSTimeTrackerViewController.m in Sources */,
+				FA880FA22428F24400DBC455 /* AMSTimedTaskController.m in Sources */,
 				467FC84D23F3738C00C15592 /* main.m in Sources */,
 				467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */,
 			);
